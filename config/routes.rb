@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   #What does 'pictures' before hash rocket do?
   get 'pictures' => 'pictures#index'
-
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
