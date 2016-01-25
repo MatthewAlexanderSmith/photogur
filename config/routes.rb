@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   #What does 'pictures' before hash rocket do?
+  root 'pictures#index'
   get 'pictures' => 'pictures#index'
 
   #Two routes required for creating new resource
